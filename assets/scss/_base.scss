@@ -1,0 +1,33 @@
+//todo lo comun a mi proyecto
+
+//vars
+$mainColor:#ff1493;
+$secondaryColor:rgb(84, 83, 83);
+$white:rgb(240, 236, 236);
+$black:rgb(10, 10, 10);
+
+//font
+$mainFont:'Mulish', sans-serif;
+
+*{
+    font-family: $mainFont;
+}
+
+// fondos 
+.bg-pink{
+    background-color:$mainColor;
+    color:$white;
+}
+
+h1,h2,h3{
+    color: $mainColor;
+}
+h1{
+    font-weight: 500;
+}
+h2{
+    font-weight: 400;
+}
+h3{
+    font-weight: 300;
+}

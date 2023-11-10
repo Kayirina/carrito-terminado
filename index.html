@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Sahumerio santo</title>
+    <!-- SEO -->
+    <meta name="description" content="Venta de sahumerios santos y orgánicos. Delivery en CABA. Los mejores sahumerios">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <!-- css de BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- mi css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <!-- acá va tu logo -->
+            <img src="./assets/img/logo.svg" alt="Logo de el proyecto">
+          </a>
+          <!-- este es el btn hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- estas son las 3 lineas del btn hamburguesa -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item ms-2">
+              <!-- icon user -->
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-tem ms-2">
+                <!-- icon cart -->
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+
+                  <span class="num-cart">1</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- ends nav -->
+    <main class="p-3 container-fluid">
+        <h1 class="text-center fs3 my-3">Nuestros productos</h1>
+        <!-- filtros -->
+        <section class="row mb-3 filters">
+          <div class="col-md-12">
+            <form action="">
+              <div class="row">
+                <div class="col-6">
+                  <input type="search" placeholder="buscar">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                  <select class="form-select w-25" aria-label="Default select example">
+                    <option selected>Ordenar...</option>
+                    <option value="1">Mayor precio</option>
+                    <option value="2">Menor precio</option>
+                    <option value="3">Alfabeticamente</option>
+                  </select>
+                </div>
+              </div><!-- ends row 2 -->
+            </form><!-- ends form -->
+          </div><!-- ends col8 -->
+        </section><!-- ends row1 -->
+        <!-- ends filtros -->
+        <!-- inicia sistema de grilla de BS  NO ME PUEDE FALTAR LA CLASE ROW EN EL CONTENEDOR-->
+        <section class="row">
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="./assets/img/difusores/difusor-mora.png" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Sahumerio santo</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="price">$2.500</p>
+                      <button class="btn bg-pink">Agregar al carrito</button>
+                    </div>
+                </div>
+            </figure><!-- ends card I -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="./assets/img/difusores/disufor-aromatico-coleccion-lar.jpeg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Sahumerio santo</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="price"> <span id="precioProducto">2500</span></p>
+                      <input type="number" id="cantidadProducto1" value="1" min="1" max="100"> </input>
+                      <button class="btn bg-pink" onclick="agregarProducto('Sahumerio santo 1',2500,'cantidadProducto1')">Agregar al carrito</button>
+                    </div>
+                </div>
+            </figure><!-- ends card II -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="./assets/img/difusores/disufor-aromatico-coleccion-relax.jpeg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Sahumerio santo</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="price">$2.500</p>
+                      <button class="btn bg-pink">Agregar al carrito</button>
+                    </div>
+                </div>
+            </figure><!-- ends card III -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+                <div class="card">
+                    <img src="./assets/img/difusores/disufor-aromatico-coleccion-zoila.jpeg" class="card-img-top w-100" alt="...">
+                    <div class="card-body">
+                      <h2 class="card-title">Sahumerio santo</h2>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="price">$2.500</p>
+                      <button class="btn bg-pink">Agregar al carrito</button>
+                    </div>
+                </div>
+            </figure><!-- ends card Iv -->
+            <figure class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="card">
+                  <img src="./assets/img/difusores/difusor-mora.png" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">Sahumerio santo</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="price">$2.500</p>
+                    <button class="btn bg-pink">Agregar al carrito</button>
+                  </div>
+              </div>
+          </figure><!-- ends card I -->
+          <figure class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="card">
+                  <img src="./assets/img/difusores/disufor-aromatico-coleccion-lar.jpeg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">Sahumerio santo</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="price">$2.500</p>
+                    <button class="btn bg-pink">Agregar al carrito</button>
+                  </div>
+              </div>
+          </figure><!-- ends card II -->
+          <figure class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="card">
+                  <img src="./assets/img/difusores/disufor-aromatico-coleccion-relax.jpeg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">Sahumerio santo</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="price">$2.500</p>
+                    <button class="btn bg-pink">Agregar al carrito</button>
+                  </div>
+              </div>
+          </figure><!-- ends card III -->
+          <figure class="col-sm-12 col-lg-6 col-xl-3">
+              <div class="card">
+                  <img src="./assets/img/difusores/disufor-aromatico-coleccion-zoila.jpeg" class="card-img-top w-100" alt="...">
+                  <div class="card-body">
+                    <h2 class="card-title">Sahumerio santo</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="price">$2.500</p>
+                    <button class="btn bg-pink">Agregar al carrito</button>
+                  </div>
+              </div>
+          </figure><!-- ends card Iv -->
+        </section><!-- ends row -->
+
+        
+        <!-- stars off canvas cart -->
+
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Artículos de tu carrito</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- inicia los items del carrito -->
+            <section class="row cart-items">
+              <div class="col-md-3">
+                <img src="./assets/img/difusores/disufor-aromatico-coleccion-ambar.jpeg" alt="fotito">
+              </div><!-- ends col-ms-3 -->
+              <div class="col-md-6">
+                <h4>Sahumerio Santo caja x 10</h4>
+                <p class="price">$2500 c/u</p>
+                <p class="cant">Cantidad: 3</p>
+              </div><!-- ends col-md-6 -->
+              <div class="col-md-3">
+                <p class="price">$1500 c/u</p>
+                <p class="cant">Cantidad:3</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                  </svg>
+                </div><!-- ends col-md3 -->
+              </button>
+            </section><!-- ends row 1-->
+            <hr>
+            <!-- ends carrito 1 -->
+            <section class="row cart-items">
+              <div class="col-md-3">
+                <img src="./assets/img/difusores/disufor-aromatico-coleccion-ambar.jpeg" alt="fotito">
+              </div><!-- ends col-ms-3 -->
+              <div class="col-md-6">
+                <h4>Sahumerio Santo caja x 10</h4>
+                <p class="price">$2500 c/u</p>
+                <p class="cant">Cantidad: 3</p>
+              </div><!-- ends col-md-6 -->
+              <div class="col-md-3">
+                <p class="price">$1500 c/u</p>
+                <p class="cant">Cantidad:3</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                  </svg>
+                </div><!-- ends col-md3 -->
+              </button>
+            </section><!-- ends row 2-->
+            <hr>
+
+            <section class="row cart-items">
+              <div class="col-md-3">
+                <img src="./assets/img/difusores/disufor-aromatico-coleccion-ambar.jpeg" alt="fotito">
+              </div><!-- ends col-ms-3 -->
+              <div class="col-md-6">
+                <h4>Sahumerio Santo caja x 10</h4>
+                <p class="price">$2500 c/u</p>
+                <p class="cant">Cantidad: 3</p>
+              </div><!-- ends col-md-6 -->
+              <div class="col-md-3">
+                <p class="price">$1500 c/u</p>
+                <p class="cant">Cantidad:3</p>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                  </svg>
+                </div><!-- ends col-md3 -->
+              </button>
+            </section><!-- ends row 3-->
+            <hr>
+            <!-- ends items carrito -->
+            <p> Total de su compra: <span class="total-price">$50.000</span></p>
+            <button class="btn bg-pink">Finalizar la compra</button>
+          </div>
+        </div>
+
+
+        <!-- ends off canvas cart -->
+
+
+        <section class="float-left fixed-end bg-light">
+          <div id="carrito de compras">
+            <h2>Tu carrito</h2>
+            <ul id="carritoLista">
+
+            </ul>
+            <h3>El valor total de tu compra es: $<span id="carritoTotal"></span></h3>
+          </div>
+          <script src="./javascript/function.js"></script>
+
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Js de BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

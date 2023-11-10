@@ -1,0 +1,62 @@
+
+/* inicia nav */
+.botonera{
+    background-color:$mainColor;
+    img{
+        width: 150px;
+    }
+    a{
+        color:$white;
+    }
+    svg{
+        width: 30px;
+        fill:$white;
+    }
+    .num-cart{
+        width: 15px;
+        height: 15px;
+        background-color: $black;
+        border-radius: 50%;
+        color:$white;
+        display: block;
+        border: solid $black 1px;
+        transform: translate(20px,-30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5em;
+    }
+}
+// inicia itms del carrito
+.cart-items{
+    img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    h4{
+        font-size: 1em;
+        color: $mainColor;
+    }
+    .price{
+        color: $black;
+        font-weight: 500;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        svg{
+            width: 30px;
+            fill: $mainColor;
+        }
+    }
+    .cant{
+        color: gray;
+    }
+
+}
+.total-price{
+    font-size: 1.1em;
+    color: black;
+    font-weight: 600;
+
+}

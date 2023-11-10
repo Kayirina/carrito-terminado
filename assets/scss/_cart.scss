@@ -1,0 +1,16 @@
+.filters{
+    button{
+        border: none;
+        background-color:$mainColor;
+        border-radius: 8px;
+        padding:4px 8px;
+        svg{
+            width: 20px;
+            fill: $white;
+        }
+    }
+    input{
+        border-radius: 8px;
+    }
+}
+
